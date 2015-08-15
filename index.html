@@ -3,35 +3,50 @@
 	<title>John Amba's Phonebook</title>
 </head>
 <body>
-	<form action="actionForm.php" method="POST">
-		General Information <br>
-		Name: 			<input type="text" name="name"><br>
-		PhoneNumber: 	<input type="text" name="number"><br>
-		Email:			<input type="text" name="email"><br>
-		<br>
-		Miscellaneous <br>
-		Gender: <input type="radio" name="gender" value="Male">Male
-				<input type="radio" name="gender" value="Female">Female
-				<br>
-		Civil Status: <select name="status">
-			<option value="single">Single</option>
-			<option value="crush">Hopia</option>
-			<option value="unemployed">Ampalaya</option>
-			<option value="married">Neck-Tied</option>
-		</select>
-		<br>
-		Character Description: <br>
-			<textarea rows="4" cols="45" name="description"></textarea>
-			<br>
-		Tag for:
-		<input type="checkbox" name="tag" value="classmate">Classmate
-		<input type="checkbox" name="tag" value="family">Family
-		<input type="checkbox" name="tag" value="friend">Friend
-		<input type="checkbox" name="tag" value="acquiantance">Acquiantance
-		<br>
+	<div id="menulink" align="middle">
+			<a href="/addform.html">Add Contact</a> |
+			<a href="/Basic2.html">Edit Contact</a> |
+			<a href="/Basic.html">View</a>
+	</div>
 
-		<input type="submit">
+	<form action="actionForm.php" method="POST">
+		<div id="container" class="" align="center">
+			<h3>General Information</h3>
+			Name: 			<input type="text" name="name"><br>
+			PhoneNumber: 	<input type="text" name="number"><br>
+			Email:			<input type="text" name="email"><br>
+			<br>
+		</div>
 		
+		
+
+		<div id="container" class="" align="center">
+			<h3>Miscellaneous</h3>
+			Gender: <input type="radio" name="gender" value="Male">Male
+				<input type="radio" name="gender" value="Female">Female
+			<br>
+			
+			Civil Status: <select name="status">
+				<option value="single">Single</option>
+				<option value="crush">Hopia</option>
+				<option value="unemployed">Ampalaya</option>
+				<option value="married">Neck-Tied</option>
+			</select>
+			<br>
+			
+			Character Description: <br>
+				<textarea rows="4" cols="45" name="description"></textarea>
+				<br>
+			Tag for:
+			<input type="checkbox" name="tag" value="classmate">Classmate
+			<input type="checkbox" name="tag" value="family">Family
+			<input type="checkbox" name="tag" value="friend">Friend
+			<input type="checkbox" name="tag" value="acquiantance">Acquiantance
+			<br>
+		<input type="submit" value="Submit">
+		
+		</div>
+
 	</form>
 </body>
 </html>
