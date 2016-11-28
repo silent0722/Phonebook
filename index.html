@@ -1,51 +1,99 @@
 <html>
 <head>
-	<title>John Amba's Phonebook</title>
+	
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Information</title>
+  <!-- CORE CSS-->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+  
+<style type="text/css">
+html,
+body {
+    height: 100%;
+}
+html {
+    display: table;
+    margin: auto;
+}
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+.margin {
+  margin: 0 !important;
+}
+</style>
+<link href="student_3.css" rel="stylesheet" type="text/css" charset="utf-8" >
+</header>
+<style>
+		body{
+			background-image: url("images/2.jpg");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+	</style>
 </head>
-<body>
-	<div id="menulink" align="middle">
-			<a href="/addform.html">Add Contact</a> |
-			<a href="/Basic2.html">Edit Contact</a> |
-			<a href="/Basic.html">View</a>
-	</div>
 
-	<form action="actionForm.php" method="POST">
+<body class="blue">
+
+
+
+	
+	
+
+	<form action="addcontact.php" method="POST">
+	<div class="input-field col s12 center">
+            <img src="images/phonebook-icon1.png" alt="" class="responsive-img valign profile-image-login">
+            <p class="center login-form-text"><font color="white">John Amba's Phonebook</p></font>
+          </div>
 		<div id="container" class="" align="center">
 			<h3>General Information</h3>
-			Name: 			<input type="text" name="name"><br>
-			PhoneNumber: 	<input type="text" name="number"><br>
-			Email:			<input type="text" name="email"><br>
-			<br>
-		</div>
-		
-		
+			 
+   
+			 <div class="row"><div class="row margin">
+    <div class="input-field col s12">
+   
+			<input type="text" id="Fname" class="btn waves-effect waves-light col s12" name="Fname"required="required" placeholder="First Name" required></input>
+  
+   
+			<input type="text" id="Mname" class="btn waves-effect waves-light col s12" name="Mname"required="required" placeholder="Middle Initial" required></input>
+    
 
-		<div id="container" class="" align="center">
-			<h3>Miscellaneous</h3>
-			Gender: <input type="radio" name="gender" value="Male">Male
-				<input type="radio" name="gender" value="Female">Female
-			<br>
+    		<input type="text" id="Lname" class="btn waves-effect waves-light col s12" name="Lname"required="required" placeholder="Last Name" required></input>
+    
 			
-			Civil Status: <select name="status">
-				<option value="single">Single</option>
-				<option value="crush">Hopia</option>
-				<option value="unemployed">Ampalaya</option>
-				<option value="married">Neck-Tied</option>
-			</select>
-			<br>
+			<input type="text" id="Pnum" class="btn waves-effect waves-light col s12" name="Pnum"required="required" placeholder="Phone Number" required></input>
+    
 			
-			Character Description: <br>
-				<textarea rows="4" cols="45" name="description"></textarea>
-				<br>
-			Tag for:
-			<input type="checkbox" name="tag" value="classmate">Classmate
-			<input type="checkbox" name="tag" value="family">Family
-			<input type="checkbox" name="tag" value="friend">Friend
-			<input type="checkbox" name="tag" value="acquiantance">Acquiantance
+			<input type="text" id="Eadd" class="btn waves-effect waves-light col s12" name="Eadd"required="required" placeholder="Email Address" required></input>
+    
+			
+			<input type="text" id="Hadd" class="btn waves-effect waves-light col s12" name="Hadd"required="required" placeholder="Home Address" required></input>
+    
+			
+			<input type="text" id="Gender" class="btn waves-effect waves-light col s12" name="Gender"required="required" placeholder="Gender" required></input>
+   
+			
+			<input type="text" id="Cstatus" class="btn waves-effect waves-light col s12"v name="Cstatus"required="required" placeholder="Civil Status" required></input>
+    </div></div></div>
+			
+
 			<br>
-		<input type="submit" value="Submit">
+
+			
+		<div class="button-panel">
+    <center><input type="submit" class="btn waves-effect waves-light col s12" title="Log In" name="save" value="Save"></input></center><br>
+    </div>
+    <div id="menulink" align="middle">
+			<a href="menu.php" class="btn waves-effect waves-light col s12">Back</a>
+</div>
 		
-		</div>
+		
+		
 
 	</form>
 </body>
